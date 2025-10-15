@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Daily Task Manager 📝</h1>
+
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Task Title (e.g., Buy groceries)" required>
+            <textarea id="task-description" placeholder="Short description (optional)"></textarea>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <hr>
+
+        <div class="task-sections">
+            <section class="task-list">
+                <h2>Pending Tasks <span id="pending-count"></span></h2>
+                <ul id="pending-tasks-list">
+                    </ul>
+            </section>
+
+            <section class="task-list completed-section">
+                <h2>Completed Tasks <span id="completed-count"></span></h2>
+                <ul id="completed-tasks-list">
+                    </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

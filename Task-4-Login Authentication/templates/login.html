@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <form method="post">
+            <h2>Login</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+        </form>
+    </div>
+
+    <!-- Popup for invalid credentials -->
+    {% if error %}
+    <div class="popup" id="errorPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>{{ error }}</p>
+        </div>
+    </div>
+    <script>
+        // Show the popup when the page loads if there is an error
+        window.onload = function() {
+            document.getElementById('errorPopup').style.display = 'flex';
+        };
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('errorPopup').style.display = 'none';
+        }
+    </script>
+    {% endif %}
+</body>
+</html>

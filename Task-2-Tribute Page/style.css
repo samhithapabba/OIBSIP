@@ -1,0 +1,136 @@
+/* Serene Color Palette: 
+   Primary Background: #f7f3e8 (Soft Off-White/Cream)
+   Accent Color: #800020 (Deep Maroon/Burgundy)
+   Text Color: #333333 (Dark Gray) 
+*/
+
+:root {
+    --primary-bg: #f7f3e8;
+    --accent-color: #800020;
+    --text-color: #333333;
+    --light-accent: #c49a62; /* Gold/Tan for subtle contrast */
+    --border-radius: 10px;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Main Container and Layout */
+#main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--light-accent);
+    margin-bottom: 20px;
+}
+
+#title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-weight: 400;
+    color: #666;
+    margin-top: 0;
+}
+
+.subtitle-quote {
+    font-style: italic;
+    color: var(--light-accent);
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+/* Image Section */
+#img-div {
+    background-color: var(--primary-bg);
+    padding: 10px;
+    margin: 25px 0;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    /* Optional: Add a subtle border or filter for effect */
+    border: 3px solid var(--light-accent); 
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Biography Section */
+.bio-section h2, .bio-section h3 {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--light-accent);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.bio-section p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Quote Box Styling (Emphasis on an important quote) */
+.quote-box {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff9f0; /* Very light gold tint */
+    border-left: 5px solid var(--light-accent);
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.quote-box cite {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-style: normal;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Footer Link */
+.footer-link {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.footer-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-link a:hover {
+    color: var(--light-accent);
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2-4 | Login authentication </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to the Authentication System</h1>
+        <p>Securely manage your accounts</p>
+        <div class="links">
+            <a href="{{ url_for('register') }}" class="button">Register</a>
+            <a href="{{ url_for('login') }}" class="button">Login</a>
+        </div>
+    </div>
+</body>
+</html>
