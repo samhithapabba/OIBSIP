@@ -1,5 +1,5 @@
 # OIBSIP
-Oasis Infobyte Internship
+Oasis Infobyte Internship - Web Development
 
 This repository contains the completed tasks for the Oasis Infobyte internship. In this internship, I had the opportunity to work on various tasks at different levels, and I selected Level-2 for my project.
 
