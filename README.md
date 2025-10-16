@@ -4,6 +4,7 @@ Oasis Infobyte Internship - Web Development - Level-2
 This repository contains the completed tasks for the Oasis Infobyte internship. In this internship, I had the opportunity to work on various tasks at different levels, and I selected Level-2 for my project.
 
 Task Details
+
 Task 1: Calculator App
 In this task, I developed a calculator web application using HTML, CSS, and JavaScript. The calculator allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division. The interface is user-friendly and responsive.
 
